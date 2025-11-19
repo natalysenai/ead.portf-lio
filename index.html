@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfólio — Nátaly Rodrigues</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Portfolio</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+          ☰
+        </button>
+        <nav id="nav" class="nav">
+          <a href="#home">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#projects">Projetos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <h1>Olá, eu sou <span>Nátaly Rodrigues</span></h1>
+          <p>
+            Desenvolvedora de Sistemas
+          </p>
+          <a class="btn" href="#projects">Ver projetos</a>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>Sobre</h2>
+        <p>
+          Sou jovem aprendiz na área de tecnologia e estou começando meus
+          estudos em desenvolvimento de sistemas. No momento, estou aprendendo
+          C#, HTML e CSS, e buscando ganhar experiência enquanto crio meus
+          primeiros projetos. Gosto de entender como as coisas funcionam e estou
+          sempre tentando melhorar um pouquinho a cada dia.
+        </p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>C#</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h2>Projetos</h2>
+
+        <div id="projects-grid" class="projects-grid">
+          <article class="project-card" data-type="web">
+            <div class="project-body">
+              <h3>Projeto 1</h3>
+              <p>
+                Uma calculadora simples rodando no terminal, capaz de fazer as
+                quatro operações básicas. Projeto criado para praticar lógica e
+                estrutura condicional.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Ver</a>
+                <a href="#" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-type="game">
+            <div class="project-body">
+              <h3>Projeto 2</h3>
+              <p>
+                O usuário digita três notas e o programa calcula a média e diz
+                se foi aprovado. Treina: condicionais e cálculos simples.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Ver</a>
+                <a href="#" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contato</h2>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Nome
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label>
+            Mensagem
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Enviar</button>
+          <p
+            id="form-msg"
+            class="form-msg"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Nátaly - 2025</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
